@@ -9,3 +9,4 @@ function function1 () { //Concatenates with the +=//
     sent += " here and then continue on";
     document.getElementById("join").innerHTML = sent;
 }
+
