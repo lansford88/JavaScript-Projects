@@ -10,3 +10,4 @@ function Itachi_Dictionary() {
     delete Shinobi.Sex; //will delete the KPV (SEX) from the dictionary//
     document.getElementById("Dictionary").innerHTML = Shinobi.Sex;
 }
+
