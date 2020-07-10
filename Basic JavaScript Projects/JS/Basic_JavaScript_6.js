@@ -50,15 +50,40 @@ function count_Function() {
         }
 }
 
+function Entry_Count() {
+    document.getElementById("ECount").innerHTML = Entry_Add();
+        function Entry_Add() {
+            var Entrance_Start = 0;
+            function Plus_One() {
+                Entrance_Start += 1;
+            }
+            Plus_One();
+            return Entrance_Start;
+            
+        }
+}
 
-
-
-
-
-
-
-
-
+//Scope Practice Local Variable//
+//function Add_numbers_1() {
+  //  var M = 10;
+  //  document.write(25 + M + "<br>");
+//}
+//function Add_numbers_2() {
+//    document.write(M + 100);
+//    }
+//Add_numbers_1();
+//Add_numbers_2();
+    
+//Scope Practice Global Variable//
+var N = 10;
+function Add_Number_1() {
+    document.write(25 + N + "<br>");
+}
+function Add_Number_2() {
+    document.write(N + 100);
+}
+Add_Number_1();
+Add_Number_2();
 
 
 
