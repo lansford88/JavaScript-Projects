@@ -1,0 +1,106 @@
+* {box-sizing: border-box}
+img {
+    vertical-align: middle;
+    width: 1000px;
+    height: 200px;
+    
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 0;
+}
+
+/* The actual box the slideshow is in*/
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by Default */
+.mySlides {
+    display: none;
+}
+
+/* Adjustment for the next and the back button */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;   /*see what this does w/o ease*/
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* This positions the next button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*When you hover, will add a black background with some opacity */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* This will adjust any Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (like the page numbers) */
+.numbertext {
+    color:#f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Adjusting the "dots" or Page indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* This will cause the dots to change color to a dark grey when hovered over */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fade animations */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
