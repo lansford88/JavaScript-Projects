@@ -80,24 +80,41 @@ document.write("<br>" + A);
 
 
 
-//NEED ASSISTANCE WITH THIS ONE
 let PC = {
-    Brand: "Alienware",
-    Cpu: "I5 3700k",
-    Gpu: "Gtx 1070ti",
+    Brand: " Alienware",
+    Cpu: " I5 3700k",
+    Gpu: " Gtx 1070ti",
     description: function() {
         return " My computer is a" + this.Cpu + this.Brand + " with a" + this.Gpu;
     }
 }
 document.getElementById("my_Computer").innerHTML = PC.description();
 
-//NEED ASSISTANCE WITH! //
 
-var text = "";
+
+var text = "";  
 var i;
-for (i = 0, i < 10; i++;) {
+for (i = 0; i < 10; i++) {
     if (i === 3) {break;}
     text += "The number is " + i + "<br>";
     document.getElementById("demo").innerHTML = text;
 }
 document.getElementById("demo").innerHTML = text;
+
+var text = "";
+var Z;
+for (Z = 2020; Z < 2030; Z++) {
+    if (Z === 2029) {break;}
+    text += "The number is" + Z + "<br>";
+    document.getElementById("z_Break").innerHTML = text;
+}
+document.getElementById("z_Break").innerHTML = text;
+
+var text = "";
+var Z;
+for(Z = 2030; Z >= 2015; Z--) {
+    if(Z === 2020) {continue;}
+    text += "The number is" + Z + "<br>";
+    document.getElementById("z_Continue").innerHTML = text;
+}
+document.getElementById(z_Continue).innerHTML = text;
