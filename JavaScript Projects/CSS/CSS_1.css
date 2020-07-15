@@ -1,0 +1,20 @@
+
+input {
+    width: 75%;    /* Extends the input boxes */
+    padding: 10px 30px; /* Gives space INSIDE the text field */
+    margin: 10px 0;     /* Gives space OUTSIDE the text field */
+    box-sizing: border-box;
+    border: 3px solid rgb(48, 8, 143); /*Gives the input boxes a stylized border */
+    border-radius: 4px; /* Rounds the edges of the input fields */
+    /*To NOT have the box and only have a bottom, use border-bottom, this will create a line at the bottom of the field.*/
+    background-color: honeydew; /* Will fill the field with a color */
+    color: indigo; /*Focuses on the TEXT IN the field */
+
+}
+
+input[type=text]:focus {
+    background-color: lightblue; /* When you click on the box to input something the input field will change*/
+}
+
+
+
