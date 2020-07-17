@@ -1,5 +1,5 @@
 function getReceipt() {
-    //This initializes our string so it can get passed fro m
+    //This initializes our string so it can get passed from
     //function to function, growing line by line into a full reeipt
     var text1 = "<h3> You Ordered:</h3>";
     var runningTotal = 0;
@@ -21,6 +21,8 @@ function getReceipt() {
         sizeTotal = 14;
     } else if (selectedSize === "Extra Large Pizza") {
         sizeTotal = 16;
+    } else if (selectedSize === "Small Army!") {
+        sizeTotal = 22;
     }
     runningTotal = sizeTotal;
     console.log(selectedSize+" = $"+sizeTotal+".00");
@@ -52,5 +54,6 @@ function getTopping(runningTotal,text1) {
     console.log(toppingCount +" topping - 1 free topping = "+"$"+toppingTotal+".00");
     console.log("topping text1: "+text1);
     console.log("Purchase Total: "+"$"+runningTotal+".00");
-    document.getElementById("showText").innerHTML = `<h3>Total: <strong>$${runningTotal}.00</strong></h3>`;
+    document.getElementById("showText").innerHTML =text1;
+    document.getElementById("totalPrice").innerHTML = "</h3Total: <strong>$"+runningTotal+".00"+"</strong</h3>";
     };
